@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PL - Refrence</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="index.css">
+<h1 align=right>PL</h1>
+<ul>
+	<a href="index.html"><li>Home</li></a>
+	<a href="about.html"><li>About</li></a>
+	<a href="refrence.html"><li>Refrence</li></a>
+	<a href="tutorials.html"><li>Tutorials</li></a>
+	<a href="downloads.html"><li>Downloads</li></a>
+</ul>
+<a href="#println">println</a>
+<a href="#clear">clear()</a>
+<a href="#input">input()</a>
+<a href="#if">if</a>
+<a href="#else">else</a>
+<a href="#elif">elif</a>
+<a href="#for">for</a>
+<a href="#while">while</a>
+<a href="#setScreen">setScreen</a>
+<a href="#line">line</a>
+<a href="#ellipse">ellipse</a>
+<a href="#funct">funct</a>
+<a href="#void">void</a>
+<a href="#createVector">createVector</a>
+
+<h1>BASIC STATEMENTS</h1>
+<a name="println" /><h1>println</h1>
+<p>Used to Display something on the screen. </p>
+<pre>
+clear()
+println "Hello World!"
+</pre>
+<p>Can also be used to declare variables!</p>
+<pre>
+clear()
+input("Enter the value of a", a)
+println a
+</pre>
+<a name="clear" /><h1>clear()</h1>
+<p>Used to clear the screen. </p>
+<pre>
+clear()
+println("Hello World")
+clear()
+println("Hello World again!")
+</pre>
+<a name="input" /><h1>input()</h1>
+<p>Used to ask the user for some value</p>
+<pre>
+clear()
+input("Enter your name: ", a$)
+println a$
+</pre>
+<a name="if" /><h1>if</h1>
+<p>Used for boolean operations</p>
+<pre>
+clear()
+input("Want to continue? (Y/N)", ch$)
+if(ch$ = "y") {
+	println "Thank you"
+}
+</pre>
+<a name="else" /><h1>else</h1>
+<p>Used in if, for the false block</p>
+<pre>
+clear()
+input("Want to continue? (Y/N)", ch$)
+if(ch$ = "y") {
+	println "Thank you"
+else {
+	println "You suck!"
+}
+}
+</pre>
+<a name="elif" /><h1>elif</h1>
+<p>Used in if, for other blocks</p>
+<pre>
+clear()
+input("Want to continue? (Y/N)", ch$)
+if(ch$ = "y") {
+	println "Thank you"
+elif(ch$ = "n") {
+	println "You suck!"
+else {
+	println "Invalid Choice!"
+}
+}
+}
+</pre>
+<a name="for" /><h1>for</h1>
+<p>Used to loop a certain block of statement/s for a certain amount of time.</p>
+<pre>
+clear()
+for i = 1 to 10 {
+	println i
+}
+</pre>
+<a name="while" /><h1>while</h1>
+<p>Used to loop a certain block of statement/s.</p>
+<pre>
+clear()
+while(x < 10) {
+	println x
+	x=x+1
+}
+</pre>
+<a name="setScreen" /><h1>setScreen</h1>
+<h2>PL.QB</h2>
+<p>Used to set the screen from anywhere in number 0 - 13.</p>
+<pre>
+clear()
+setScreen 12
+line(100,100)-(200,200), 5
+</pre>
+<h2>PL.QB64</h2>
+<p>Used to set screen to a certain resolution</p>
+<pre>
+clear()
+setScreen(800,600)
+line(0,0)-(800,600), rgb(100,200,255)
+</pre>
+<a name="line" /><h1>line</h1>
+<p>Used to join any two points.</p>
+<pre>
+clear()
+setScreen 12
+line(0,0)-(100,200)
+</pre>
+<a name="ellipse" /><h1>ellipse</h1>
+<p>Used to draw a circle with a certain radius.</p>
+<pre>
+clear()
+setScreen 12
+ellipse(150,150), 50
+</pre>
+<a name="funct" /><h1>funct</h1>
+<p>Used to Create a function.</p>
+<pre>
+clear()
+input("Enter a", a)
+input("Enter b", b)
+sum = add(a,b)
+println "The Sum of those number = "; sum
+
+funct add(num1,num2) {
+	add = num1 + num2
+}
+</pre>
+<a name="void" /><h1>void</h1>
+<p>Used to create a empty function(sub)</p>
+<pre>
+clear()
+display_name
+
+void display_name() {
+	println "Prithak Adhikari"
+}
+</pre>
+<a name="createVector" /><h1>createVector</h1>
+<p>Used to create a vector.</p>
+<pre>
+clear()
+createVector vector
+vector.x = 100
+vector.y = 200
+println vector.x ; vector.y
+</pre>
+<a name="declare" /><h1>declare</h1>
+<p>Used to declare something to something.</p>
+<pre>
+declare a[10]
+for i = 1 to 10 {
+	a[i] = i
+}
+
+</pre>
+<h1>LIBRARY FUNCTIONS</h1>
+<p>Consult this page for all the basic library functions: </p><a href="https://prajwalrai.com.np/library-functions-in-qbasic-introduction/">Click here</a>
+<h1>Arrays</h1>
+<p>Arrays can be declared like this: </p>
+<pre>
+clear()
+declare a[10]
+</pre>
+</body>
+</html>
