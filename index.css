@@ -7,7 +7,7 @@ h1 {
 }
 
 body {
-	background-color: rgb(255,200,100);
+	background-color: rgb(200,200,200);
 }
 
 li {
@@ -47,4 +47,27 @@ pre {
 pre code {
 	padding: 10px;
 	color: #333;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input {
+	border: 2px solid red;
+	border-radius: 4px;
+	font-size: 24px;
+	font-family: Helvetica;
 }
